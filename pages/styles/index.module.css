@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+.pageWrapper {
+    content: '';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 100%;
+    min-height: 100vh;
+    width: fit-content;
+    height: fit-content;
+}
+
+.backgroundWrapper {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    background-image: url('/images/background.png');
+    filter: brightness(20%);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: -1;
+}
+
+.title {
+    position: relative;
+    font-size: 2rem;
+    margin-top: 20px;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.uploadWrapper {
+    position: relative;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.1rem;
+    top: 1rem;
+}
+
+.formWrapper {
+    width: 250px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.asciiWrapper {
+    position: relative;
+    margin-top: 40px;
+    white-space: pre;
+    font: 10px/5px monospace;
+}
+
+.widthText {
+    font-size: 1rem;
+}
+
+.customFileInput input[type="file"] {
+    display: none;
+}
+
+.button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #871250;
+    border-radius: 15px;
+    color: white;
+    font-size: 1rem;
+    font-family: 'Open Sans', sans-serif;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.button:hover {
+    background: #a93b6c;
+}
+
+.button:active {
+    background: #470725;
+}
